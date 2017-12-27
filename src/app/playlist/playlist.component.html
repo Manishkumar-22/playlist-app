@@ -1,0 +1,12 @@
+
+<div *ngIf="playlists?.length!=0">
+  <ul class="rectangle-list">
+    <li *ngFor="let playlist of playlists" (click)="playVideo(playlist)" [class.active]="title==playlist.title" ><a >{{playlist.title}}</a>
+        
+    </li>
+                
+</ul>
+<div class="playlist" ></div>
+
+</div>
+
